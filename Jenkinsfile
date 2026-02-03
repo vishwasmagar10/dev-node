@@ -10,7 +10,7 @@ pipeline{
 	stages{
 		stage("checkout"){
 			steps{
-				git url:'',branch:'main'
+				git url:'https://github.com/vishwasmagar10/dev-node',branch:'main'
 			}
 		}
 		stage('build'){
