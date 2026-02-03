@@ -1,7 +1,7 @@
 pipeline{
 	agent any
 	environment{
-		DOCKER_CRED=credentials('dockerhub')
+		DOCKER_CRED=credentials('docker')
 		IMAGE_NAME='vishwasmagar10/devops'
 	}
 	triggers{
@@ -23,7 +23,7 @@ pipeline{
 		stage('push'){
 			steps{
 				script{
-					docker.withRegistry('https://index.io/v1/','dockerhub') {
+					docker.withRegistry('https://index.io/v1/','docker') {
 						dockerImage.push()
 					}
 				}
