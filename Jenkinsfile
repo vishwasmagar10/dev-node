@@ -29,7 +29,7 @@ pipeline{
 				}
 			}
 		}
-	}
+	
 	post{
 		sucess { echo 'sucess'} }
 		failure { echo 'failure'} }
