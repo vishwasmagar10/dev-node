@@ -30,9 +30,9 @@ pipeline{
 			}
 		}
 	}
-	post{
-		sucess { echo 'sucess'} 
-		failure { echo 'failure'} 
-	}
+	// post{
+	// 	sucess { echo 'sucess'} 
+	// 	failure { echo 'failure'} 
+	// }
 }
 			
