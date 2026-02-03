@@ -4,9 +4,9 @@ pipeline{
 		DOCKER_CRED=credentials('docker')
 		IMAGE_NAME='vishwasmagar10/dev-react'
 	}
-	triggers{
-		cron('* * * * *')
-	}
+	// triggers{
+	// 	cron('* * * * *')
+	// }
 	stages{
 		stage("checkout"){
 			steps{
