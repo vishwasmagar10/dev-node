@@ -2,7 +2,7 @@ pipeline{
 	agent any
 	environment{
 		DOCKER_CRED=credentials('docker')
-		IMAGE_NAME='vishwasmagar10/devops'
+		IMAGE_NAME='vishwasmagar10/dev-node'
 	}
 	triggers{
 		cron('* * * * *')
